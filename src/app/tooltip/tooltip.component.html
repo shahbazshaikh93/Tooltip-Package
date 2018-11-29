@@ -1,0 +1,10 @@
+
+<div *ngIf="tooltipMessage" class="tooltip-box float-right">
+  
+  {{tooltipMessage}}
+
+  <span (click)="closeMessage()">
+    <button>Cancel</button>
+  </span>
+
+</div>

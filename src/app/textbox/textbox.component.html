@@ -1,0 +1,20 @@
+<div>
+    <p>Enter the text in TextBox or click on Cancel to dismiss tooltip message. </p>
+    <label>Enter Text:</label>
+    <input (keyup)="textboxKeyup($event)" id="textvalue" type="text" />
+    
+    <app-tooltip
+      [tooltipMessage]=" generalTooltipMessage"
+      (dismiss)="tooltipMessageFromChild($event)">
+    </app-tooltip>
+
+    <label>ddh Text:</label>
+    <input (keyup)="textboxKeyup2($event)" id="textvalue" type="text" />
+
+    <app-tooltip
+      [tooltipMessage]=" ooltipMessage"
+      (dismiss)="tooltipMessageFromChild($event)">
+    </app-tooltip>
+ </div>
+
+ 
